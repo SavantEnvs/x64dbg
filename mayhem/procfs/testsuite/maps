@@ -1,0 +1,6 @@
+55d0c0a00000-55d0c0a02000 r--p 00000000 08:01 1835023                    /usr/bin/cat
+55d0c0a02000-55d0c0a07000 r-xp 00002000 08:01 1835023                    /usr/bin/cat
+55d0c1c3e000-55d0c1c5f000 rw-p 00000000 00:00 0                          [heap]
+7f2a1b200000-7f2a1b222000 r--p 00000000 08:01 1837580                    /tmp/my lib (x).so (deleted)
+7ffd5a1e4000-7ffd5a205000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

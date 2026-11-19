@@ -1,0 +1,11 @@
+project: savantenvs/x64dbg
+target: patternfind
+
+cmds:
+  - cmd: /mayhem/fuzz_patternfind
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/patternfind/testsuite

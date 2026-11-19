@@ -1,0 +1,11 @@
+project: savantenvs/x64dbg
+target: zydis_disasm
+
+cmds:
+  - cmd: /mayhem/fuzz_zydis_disasm
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/zydis_disasm/testsuite

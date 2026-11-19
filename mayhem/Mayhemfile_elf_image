@@ -1,0 +1,11 @@
+project: savantenvs/x64dbg
+target: elf_image
+
+cmds:
+  - cmd: /mayhem/fuzz_elf_image
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/elf_image/testsuite
